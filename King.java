@@ -7,7 +7,6 @@ public class King extends ConcretePiece{
             type = "♛";
         else
             type = "♕";
-        Moves = new ArrayList<>();
     }
     //count the pieces or board limits sarounding this current player and returns true if it is sarounded all around(if sarround = 4)
     public boolean is_captured(int side){

@@ -8,7 +8,6 @@ public class Pawn extends ConcretePiece{
             type = "♟";
         else
             type = "♙";
-        Moves = new ArrayList<>();
     }
     //count the pieces or board limits sarounding this current player and returns true if it is sarounded by
     //the player which attacked him(side) and the other side
