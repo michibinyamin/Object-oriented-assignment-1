@@ -31,7 +31,7 @@ public abstract class ConcretePiece implements Piece{
     public int getSquares(){
         return this.squares;
     }
-    public Position current_position(){return Moves.getLast();}
+    public Position current_position(){return Moves.get(Moves.size()-1);}
     public ConcretePiece get_over(){return board[this.current_position().getX()][this.current_position().getY()-1];}
     public ConcretePiece get_right(){return board[this.current_position().getX()+1][this.current_position().getY()];}
     public ConcretePiece get_under(){return board[this.current_position().getX()][this.current_position().getY()+1];}
