@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public abstract class ConcretePiece implements Piece{
-    protected ArrayList<Position> Moves; //tracks the moves of each player
+    protected ArrayList<Position> Moves = new ArrayList<>(); //tracks the moves of each player
     public static ConcretePiece[][] board;  //for easy access to board from class
     private int squares;    //counts the number of squares this piece has moved
     protected Player player;
